@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #C4DFD8;
+}
+
+* {
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    color: #DBFFE8;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    text-shadow: 4px 4px
+}
+.container {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#oncologistList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.oncologist {
+    list-style-type:circle ;
+    background-color: #50987B;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.oncologist > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.oncologist > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: 0px;
+}
+
+.oncologist > img {
+    max-height: 130px;
+    grid-area: image;
+}
+
+.searchWrapper {
+  display: flex;
+}
+
+input {
+  width: 700px;
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-indent: 15px;
+  font-size: 16px;
+  caret-color: #C4DFD8;
+
+
+ 
+}
